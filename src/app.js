@@ -2,8 +2,8 @@ const express = require("express");
 const path = require("path");
 const favicon = require("serve-favicon");
 const exphbs = require("express-handlebars");
-const controller = require("./controller/index");
-const helpers = require("./view/helpers/index");
+const controllers = require("./controllers/index");
+const helpers = require("./views/helpers/index");
 
 const app = express();
 
@@ -22,6 +22,8 @@ app.engine(
 );
 
 app.set("port", process.env.PORT || 3000);
-app.use(favicon(path.join(__dirname, "..", "public", "favicon.ico")));
+// app.use(favicon(path.join(__dirname, "..", "public", "favicon.ico")));
 app.use(express.static(path.join(__dirname, "..", "public")));
-app.use(controllers);
+// app.use(controllers);
+
+module.exports = app;
