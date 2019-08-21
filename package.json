@@ -21,7 +21,7 @@
   "scripts": {
     "start": "node src/index.js",
     "dev": "nodemon src/index.js",
-    "db_init": "node src/model/database/db_init.js", 
+    "db_init": "node src/model/database/db_init.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
