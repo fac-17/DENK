@@ -1,8 +1,12 @@
-const getRandomCardQuery = require('../model/database/queries/getRandomCard')
+const getRandomCardQuery = require("../model/database/queries/getRandomCard");
 exports.tarot = (req, res) => {
-  console.log({getRandomCardQuery})
-getRandomCardQuery().then(result=>{
-  console.log(result.rows)
-})
-  res.render('tarot');
+  getRandomCardQuery()
+  .then(result => {
+    res.render("tarot",{tarot:result.rows[0]});
+  }).catch(err=>{
+    res.render("error",{
+      statusCode:500,
+      errorMessage:"DB error"
+    })
+  })
 };
