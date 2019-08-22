@@ -21,8 +21,10 @@ p {
   justify-content: center;
 }
 
-.fullsvg{
+
+.hand-grow{
   transform: scale(1.5) translateY(100px);
+  transition: transform 2s;
 }
 /* Tarot Card Page */
 
