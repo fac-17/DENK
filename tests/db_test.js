@@ -23,3 +23,14 @@ tape("counting fields in database", t => {
   });
   });
 });
+
+tape("rowCount is equal to 1", t => {
+  runDbBuild((err, res) => {
+    t.error(err, "No error");
+    getRandomCard()
+    .then(result => {
+      t.equals(result.rowCount, 1, "should be equal to 1");
+      t.end();
+    })
+  });
+});
