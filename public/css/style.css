@@ -1,4 +1,15 @@
 .tarot-card-svg {
   height: 200px;
   width: 200px;
+  transform: rotate(100deg);
+}
+
+#card1 {
+  transform: translate(295px, 115px);
+  /* height: 40px;
+  width: 20px; */
+}
+
+.tarot-hand-svg {
+  transform: rotate(180deg);
 }
