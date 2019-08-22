@@ -1,7 +1,68 @@
+html {
+  font-family: sans-serif;
+}
+
 .tarot-card-svg {
   height: 200px;
   width: 200px;
   transform: rotate(100deg);
+}
+
+
+/* Tarot Card Page */
+
+.tarot-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.tarot-card-name {
+  text-align: center;
+  font-size: 2.2em;
+  font-family: 'Merienda One', cursive;
+}
+
+.tarot-svg {
+  max-width: 200px;
+
+}
+
+.tarot-description {
+  flex-grow: 1;
+  max-width: 500px;
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  font-family: 'Halant', serif;
+  font-size: 1.2em;
+
+  text-align: center;
+}
+
+
+.back-button {
+  text-decoration: none;
+  color: inherit;
+  border: 1px black solid;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-family: 'Halant', serif;
+  font-size: 1.4em;
+  margin: 10px 0px;
+  transition: all 0.2s linear;
+}
+
+.back-button:hover {
+  color: white;
+  background-color: black;
 }
 
 #card1 {
@@ -13,3 +74,16 @@
 .tarot-hand-svg {
   transform: rotate(180deg);
 }
+
+a {
+  text-decoration: none;
+  color:inherit;
+
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: gainsboro;
+}
+
