@@ -8,11 +8,13 @@ const getRandomColor = ()=>{
 const getRandomByte = ()=>{
     return Math.floor(Math.random()*256)
 }
+console.log(document.querySelector(".svg-sunmiddle.crescent"));
 
 document.querySelectorAll(".tarot-card-svg").forEach(svg=>{
 
     classes.forEach(c=>{
-        console.log(svg,c)
+        console.log(svg,"this is svg")
+        console.log(c, 'this is c')
         svg.querySelector(c).setAttribute("fill",getRandomColor())
     })
 })

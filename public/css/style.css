@@ -11,13 +11,6 @@ h1 {
   font-family: 'Merienda One', cursive;
 }
 
-.tarot-card-svg {
-  height: 200px;
-  width: 200px;
-  transform: rotate(100deg);
-}
-
-
 /* Tarot Card Page */
 
 .tarot-page {
