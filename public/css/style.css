@@ -20,3 +20,15 @@ h1 {
 .tarot-hand-svg {
   transform: rotate(180deg);
 }
+
+a {
+  text-decoration: none;
+  color:inherit;
+
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: gainsboro;
+}
