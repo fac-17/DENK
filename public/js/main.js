@@ -1,5 +1,5 @@
 
-const classes = [".svg-sunmiddle-crescent", ".svg-sunmiddle-big", ".bottom-corner", ".top-corner"]
+const classes = [".svg-sunmiddle-crescent", ".svg-sunmiddle-big"]
 
 const tarotHand = document.querySelector(".fullsvg");
 
