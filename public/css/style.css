@@ -3,14 +3,27 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #cccccc, #262626);
   font-family: 'Halant', serif;
+  height: 100%;
 }
 
 h1 {
   font-family: 'Merienda One', cursive;
+  text-align: center;
 }
 
+p {
+  text-align:center;
+}
+
+.selectCard{
+  display: flex;
+  justify-content: center;
+}
+
+.fullsvg{
+  transform: scale(1.5) translateY(100px);
+}
 /* Tarot Card Page */
 
 .tarot-page {
@@ -81,9 +94,14 @@ a {
 }
 
 footer {
+  width: 100vw;
+  padding-top: 2rem;
+  background: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 50%);
+  font-size: 0.7rem;
   text-align: center;
-  padding: 1rem;
-  background-color: gainsboro;
+  display: block;
+  position: fixed;
+  bottom: 0px;
 }
 
 .tarot-card-svg {
