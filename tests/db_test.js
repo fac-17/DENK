@@ -12,3 +12,14 @@ tape("getRandomCard", t => {
   });
 });
 });
+
+tape("counting fields in database", t => {
+  runDbBuild((err, res) => {
+    t.error(err, "No error");
+    getRandomCard()
+    .then(result => {
+    t.equals(result.fields.length, 4, "should be equal to 4 fields");
+    t.end();
+  });
+  });
+});
