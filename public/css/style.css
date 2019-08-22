@@ -2,12 +2,14 @@ html {
   font-family: 'Halant', serif;
 }
 
-.tarot-card-svg {
-  height: 200px;
-  width: 200px;
-  transform: rotate(100deg);
+body {
+  background-image: linear-gradient(to bottom right, #cccccc, #262626);
+  font-family: 'Halant', serif;
 }
 
+h1 {
+  font-family: 'Merienda One', cursive;
+}
 
 /* Tarot Card Page */
 
@@ -64,9 +66,7 @@ html {
 }
 
 #card1 {
-  transform: translate(295px, 115px);
-  /* height: 40px;
-  width: 20px; */
+  transform-origin: left;
 }
 
 .tarot-hand-svg {
@@ -76,7 +76,6 @@ html {
 a {
   text-decoration: none;
   color:inherit;
-
 }
 
 footer {
@@ -91,3 +90,11 @@ footer {
   position: fixed;
   bottom: 0px;
 }
+
+.tarot-card-svg {
+  cursor: pointer;
+}
+.tarot-card-svg:hover {
+ opacity: 0.5;
+}
+
