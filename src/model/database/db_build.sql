@@ -12,6 +12,7 @@ CREATE TABLE tarot_cards (
 INSERT INTO tarot_cards (tarot_heading, tarot_description, tarot_image) VALUES
 
   ('The Hacker',
+
     'The Hacker has their finger on the pulse of the world—manipulating, communicating, connecting,
     translating. The Hacker whispers in the languages of meat and machines—twisting logic like pretzels.
     But the Hacker’s face is a mask, mediated by the magic of a native network: their identity (and motive)
@@ -301,5 +302,6 @@ INSERT INTO tarot_cards (tarot_heading, tarot_description, tarot_image) VALUES
             </clipPath>
             </defs>
             </svg>');
+
 
 COMMIT;
