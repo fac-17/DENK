@@ -3,14 +3,29 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #cccccc, #262626);
   font-family: 'Halant', serif;
+  height: 100%;
 }
 
 h1 {
   font-family: 'Merienda One', cursive;
+  text-align: center;
 }
 
+p {
+  text-align:center;
+}
+
+.selectCard{
+  display: flex;
+  justify-content: center;
+}
+
+
+.hand-grow{
+  transform: scale(1.5) translateY(100px);
+  transition: transform 2s;
+}
 /* Tarot Card Page */
 
 .tarot-page {
