@@ -89,3 +89,6 @@ footer {
 .tarot-card-svg {
   cursor: pointer;
 }
+.tarot-card-svg:hover {
+ opacity: 0.5;
+}
