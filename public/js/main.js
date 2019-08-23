@@ -21,15 +21,17 @@ const cardClickHandler = () => {
     location.href = "/tarot"
 }
 
+classes.forEach(c => {
+    try {
+        document.querySelectorAll(c).forEach(element=>{
+            element.setAttribute('fill',getRandomColor())
+        })
+    }
+    catch (e) {
+    }
+})
 document.querySelectorAll(".tarot-card-svg").forEach(svg => {
-    classes.forEach(c => {
-        try {
-            document.querySelectorAll(c).forEach(element=>{
-                element.setAttribute('fill',getRandomColor())
-            })
-        }
-        catch (e) {
-        }
-    })
+  svg.addEventListener("click",cardClickHandler)
+
 })
 
