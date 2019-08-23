@@ -3,8 +3,10 @@ const classes = [".svg-sunmiddle-crescent", ".svg-sunmiddle-big"]
 
 const tarotHand = document.querySelector(".fullsvg");
 
-window.onload = () => {
-    tarotHand.classList.add("hand-grow");
+if (tarotHand !== null) {
+    window.onload = () => {
+        tarotHand.classList.add("hand-grow");
+    }
 }
 
 
