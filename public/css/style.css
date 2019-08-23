@@ -51,7 +51,6 @@ p {
 
 .tarot-svg {
   max-width: 200px;
-
 }
 
 .tarot-description {
@@ -60,7 +59,7 @@ p {
   margin-left: 1.2rem;
   margin-right: 1.2rem;
   font-size: 1.5em;
-
+  align-self: center;
   text-align: center;
 }
 
@@ -115,3 +114,30 @@ footer {
  opacity: 0.5;
 }
 
+@media (max-width: 500px) {
+  svg {
+    width: 90vw;
+  }
+}
+
+svg {
+  margin-right: 5rem;
+}
+
+@media (max-width: 1100px) {
+  svg {
+    margin-right: 4rem;
+  }
+}
+
+@media (max-width: 1060px) {
+  svg {
+    margin-right: 3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  svg {
+    margin-right: 0rem;
+  }
+}
