@@ -22,10 +22,11 @@ const cardClickHandler = () => {
 }
 
 document.querySelectorAll(".tarot-card-svg").forEach(svg => {
-    svg.addEventListener("click", cardClickHandler)
     classes.forEach(c => {
         try {
-            svg.querySelector(c).setAttribute("fill", getRandomColor())
+            document.querySelectorAll(c).forEach(element=>{
+                element.setAttribute('fill',getRandomColor())
+            })
         }
         catch (e) {
         }
