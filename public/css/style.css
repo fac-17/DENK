@@ -5,6 +5,13 @@ html {
 body {
   font-family: 'Halant', serif;
   height: 100%;
+
+  background: linear-gradient(to bottom,
+              rgba(130,213,255, 1),
+              rgba(255,255,255, 1));
+
+  background-attachment: fixed;
+
 }
 
 .center{
@@ -112,19 +119,6 @@ a {
   color:inherit;
 }
 
-footer {
-  width: 100vw;
-  padding-top: 2rem;
-  background: linear-gradient(to bottom,
-              rgba(255,255,255, 0),
-              rgba(255,255,255, 1) 50%);
-  font-size: 0.7rem;
-  text-align: center;
-  display: block;
-  position: fixed;
-  bottom: 0px;
-}
-
 
 .tarot-card-svg {
   cursor: pointer;
@@ -159,4 +153,20 @@ svg {
   svg {
     margin-right: 0rem;
   }
+}
+
+
+
+footer {
+  width: 100vw;
+  height: 1.3rem;
+  padding: 1rem 0rem 0.3rem 0rem;
+  background: linear-gradient(to bottom,
+              rgba(255,255,255, 0),
+              rgba(255,255,255, 1) 50%);
+  font-size: 0.8rem;
+  text-align: center;
+  display: block;
+  position: fixed;
+  bottom: 0px;
 }
